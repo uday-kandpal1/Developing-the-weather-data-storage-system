@@ -66,12 +66,19 @@ Easy to implement, memory-efficient, and allows fast checks for missing data.
 4. Time and Space Complexity Analysis
 
 Operation              Time Complexity	Explanation
+
 Insert	               O(1)	            Direct index access (row & column lookup + assignment).
+
 Delete	               O(1)	            Direct index access, replaced with sentinel.
+
 Retrieve            	 O(1)	            Direct index access (row & column lookup + retrieval).
+
 Row-Major Traversal 	 O(m × n)        	Must visit each entry (m = number of dates, n = number of cities).
+
 Column-Major Traversal O(m × n)        	Must visit each entry.
+
 Handle Sparse Data	   O(m × n)	        Must scan the entire 2D array to count missing records.
+
 Space Complexity	     O(m × n)	        2D list of size (dates × cities).
 
 Summary:
